@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interested?</title>
+</head>
+<body>
+    <h2 class="headerTitle">You Must Have Really Captured My Eyes If I'm showing you this</h2>
+    <h3 class="headerTitle">I am interested in knowing you, Wena?</h3>
+    <form id="theForm">
+        <input type="button" name="b1" id="b1" onclick="saidYes()" value="YES">
+        <input type="button" name="b2" id="b2" onclick="saidNo()" value="NO">
+    </form>
+    <p id="no"></p>
+    <p id="yes"></p>
+
+    <a href="presseedYes.html"><button id="myButton">Please Press Me</button></a>
+    <script>
+        function saidNo() {
+            document.getElementById("no").innerHTML = "Unfornately that option is unavailable!";
+        }
+        function saidYes() {
+           document.getElementById("yes").innerHTML = "I'm glad, now please stop saying no to everything I ask. \n Please the button below";
+        }
+    </script>
+    <style>
+        body{
+            text-align: center;
+            background-color: lightgrey;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .headerTitle{
+            text-align: center;
+        }
+        #b1, #b2{
+            border-radius: 5px;
+            /* cursor: pointer; */
+            padding: 10px 20px;
+            color: whitesmoke;
+            background-color: black;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+        form{
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: lightgrey;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+
+        }
+        #myButton{
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: whitesmoke;
+            background-color: black;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        #myButton:hover{
+            color: red;
+        }
+    </style>
+</body>
+</html>
